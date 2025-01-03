@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { ListaTareas } from "./ListaTareas";
-import { useTaskManager } from "./TaskManager"; // Importa el hook de manejo de tareas
+import { useFunctions } from "./Functions"; // Importa el hook de manejo de tareas
 
 export const TodoApp = () => {
     const [nuevaTarea, setNuevaTarea] = useState<string>(''); // Estado para la nueva tarea
-    const { listaTareas, addTask, deleteTask } = useTaskManager(); // Usa el hook para manejar tareas
+    const { listaTareas, addTask, deleteTask } = useFunctions(); // Usa el hook para manejar tareas
 
     // Maneja la adición de una nueva tarea
     const handleAddTask = () => {

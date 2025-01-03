@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 // Define un tipo para las tareas
-export const useTaskManager = () => {
+export const useFunctions = () => {
     const [listaTareas, setListaTareas] = useState<string[]>([]);
 
     // Función para agregar una nueva tarea
