@@ -1,4 +1,4 @@
-![pasear](https://github.com/user-attachments/assets/27a5d08e-9693-4bff-869d-018e0114aa9d)
+![funka](https://github.com/user-attachments/assets/b9ecb7dd-8ac2-431e-8dd9-dd10469ef243)
 
 ### 1. Creo proyecto con Vite y agrego nombre:
 
