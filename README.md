@@ -27,3 +27,12 @@ npm install
 ### 6. Desde index.html llamo al modulo main.tsx:
 
 ![index](https://github.com/user-attachments/assets/1d87afa5-46a6-4f3b-b795-472b242f2f69)
+
+### 7. Ejecuto la aplicación:
+
+```
+npm run dev
+```
+![dev](https://github.com/user-attachments/assets/9a8281c0-85f2-45eb-9075-af8b059f300f)
+
+![lista](https://github.com/user-attachments/assets/a1ab504a-3f59-4e51-bbe6-541086d19a2e)
