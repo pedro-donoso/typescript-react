@@ -1,3 +1,5 @@
+![pasear](https://github.com/user-attachments/assets/27a5d08e-9693-4bff-869d-018e0114aa9d)
+
 ### 1. Creo proyecto con Vite y agrego nombre:
 
 ```
