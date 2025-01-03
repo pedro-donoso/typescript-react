@@ -14,25 +14,27 @@ export const TodoApp = () => {
         }
     };
 
-     return (
-        <div className="max-w-md mx-auto p-4">
-            <h1 className="text-2xl font-bold mb-4">Lista de Tareas</h1>
-            <div className="flex mb-4">
-                <input
-                    type="text"
-                    value={nuevaTarea}
-                    onChange={(e) => setNuevaTarea(e.target.value)}
-                    placeholder="Nueva Tarea"
-                    className="flex-1 border border-gray-300 rounded p-2 mr-2"
-                />
-                <button
-                    onClick={handleAddTask}
-                    className="bg-blue-500 text-white rounded px-4 py-2 hover:bg-blue-600"
-                >
-                    Agregar Tarea
-                </button>
+    return (
+        <div className="bg-purple-500 min-h-screen flex items-center justify-center"> {/* Contenedor de fondo */}
+            <div className="max-w-md w-full bg-white shadow-md rounded-lg p-4"> {/* Contenedor principal */}
+                <h1 className="text-2xl font-bold mb-4">Lista de Tareas</h1>
+                <div className="flex mb-4">
+                    <input
+                        type="text"
+                        value={nuevaTarea}
+                        onChange={(e) => setNuevaTarea(e.target.value)}
+                        placeholder="Nueva Tarea"
+                        className="flex-1 border border-gray-300 rounded p-2 mr-2"
+                    />
+                    <button
+                        onClick={handleAddTask}
+                        className="bg-blue-500 text-white rounded px-4 py-2 hover:bg-blue-600"
+                    >
+                        Agregar Tarea
+                    </button>
+                </div>
+                <EliminarTareas listaTareas={listaTareas} borrarTarea={deleteTask} />
             </div>
-            <EliminarTareas listaTareas={listaTareas} borrarTarea={deleteTask} />
         </div>
     );
 };
