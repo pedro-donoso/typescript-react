@@ -13,7 +13,7 @@ export const ListaTareas: React.FC<Props> = ({ listaTareas, borrarTarea }) => {
             {listaTareas.map((tarea, index) => ( // Mapea sobre el array de tareas
                 <li key={index}> {/* Cada tarea se renderiza como un elemento de lista */}
                     {tarea} {/* Muestra el texto de la tarea */}
-                    <button onClick={() => borrarTarea(index)}>Borrar</button> {/* Botón para borrar la tarea, llama a la función borrarTarea con el índice correspondiente */}
+                    <button onClick={() => borrarTarea(index)}>Borrar</button> {/* Botón que llama a la función borrarTarea con cada índice */}
                 </li>
             ))}
         </ul>
