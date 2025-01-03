@@ -68,3 +68,12 @@ npx tailwindcss init -p
 ```
 npm run dev
 ```
+### Al finalizar el proyecto:
+
+```
+npm run build
+```
+
+#### Para generar la carpeta dist
+
+![dist](https://github.com/user-attachments/assets/4b35838b-a342-4195-b8f1-9ff098684409)
