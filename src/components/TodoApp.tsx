@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ListaTareas } from "./ListaTareas";
+import { EliminarTareas } from "./EliminarTareas";
 import { useFunctions } from "./Functions"; // Importa el hook de manejo de tareas
 
 export const TodoApp = () => {
@@ -32,7 +32,7 @@ export const TodoApp = () => {
                     Agregar Tarea
                 </button>
             </div>
-            <ListaTareas listaTareas={listaTareas} borrarTarea={deleteTask} />
+            <EliminarTareas listaTareas={listaTareas} borrarTarea={deleteTask} />
         </div>
     );
 };
