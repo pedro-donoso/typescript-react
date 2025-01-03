@@ -1,28 +1,33 @@
 import { useState } from "react";
+import { ListaTareas } from "./ListaTareas";
 
 export const TodoApp = () => {
 	const [nuevaTarea, setNuevaTarea] = useState<string>('');
 	const [listaTareas, setListaTareas] = useState<string[]>([])
-	const handleAddTask = () => {
 
+	const handleAddTask = () => {
+		if(nuevaTarea.trim() === '') return
+		setListaTareas(tareasAnteriores => [...tareasAnteriores, nuevaTarea])
+		setNuevaTarea('')
+	}
+
+	const handleBorrarTarea = (index:number) => {
+		setListaTareas(tareas => tareas.filter((_,i) => i !==index))
 	}
 
 
 	return (
-		<div className="max-w-md mx-auto p-4 bg-white rounded-lg shadow-md">
-			<h1 className="text-2xl font-bold text-center mb-4">Lista de Tareas</h1>
-			<div className="mb-4">
+		<div>
+			<h1>Lista de Tareas</h1>
+			<div>
 				<input
 					type="text"
 					value={nuevaTarea}
 					onChange={(e) => setNuevaTarea(e.target.value)}
-					placeholder="Nueva Tarea"
-					className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-				/>
+					placeholder="Nueva Tarea"/>
+				<button onClick={handleAddTask}>Agregar Tarea</button>
 			</div>
-			<button className="w-full bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600" onClick={handleAddTask}>
-				Agregar Tarea
-			</button>
+			<ListaTareas listaTareas={listaTareas} borrarTarea={handleBorrarTarea}></ListaTareas>
 		</div>
 	);
 };
