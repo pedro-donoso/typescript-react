@@ -36,3 +36,40 @@ npm run dev
 ![dev](https://github.com/user-attachments/assets/9a8281c0-85f2-45eb-9075-af8b059f300f)
 
 ![lista](https://github.com/user-attachments/assets/a1ab504a-3f59-4e51-bbe6-541086d19a2e)
+
+### 8. Instalo Tailwind y creo archivos de configuración:
+
+```
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+```
+### 9. Agrego contenido a tailwind.config.js:
+
+![configuracion](https://github.com/user-attachments/assets/80814412-bd7f-4243-a42f-286577850722)
+
+### 10. En src creo archivo index.css y agrego directivas:
+
+```
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
+### 11. Importo archivo index.css al archivo principal main.tsx:
+
+![main](https://github.com/user-attachments/assets/52f9ccae-0333-40c7-87cb-35bf527420e6)
+
+### 12. Agrego estilos Tailwind al componente TodoApp.tsx:
+
+![todoapp](https://github.com/user-attachments/assets/75a14f00-cbcb-4817-925b-facf4e781b92)
+
+### 13. Corro la Aplicacion para ver los estilos:
+
+```
+npm run dev
+```
+
+![estilos](https://github.com/user-attachments/assets/4251c1e7-9da9-4f0a-9b3a-5a3dff816fc0)
+
+
+
