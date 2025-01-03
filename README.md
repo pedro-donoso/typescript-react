@@ -37,8 +37,6 @@ npm run dev
 ```
 ![dev](https://github.com/user-attachments/assets/9a8281c0-85f2-45eb-9075-af8b059f300f)
 
-![lista](https://github.com/user-attachments/assets/a1ab504a-3f59-4e51-bbe6-541086d19a2e)
-
 ### 8. Instalo Tailwind y creo archivos de configuración:
 
 ```
@@ -70,8 +68,3 @@ npx tailwindcss init -p
 ```
 npm run dev
 ```
-
-![estilos](https://github.com/user-attachments/assets/4251c1e7-9da9-4f0a-9b3a-5a3dff816fc0)
-
-
-
