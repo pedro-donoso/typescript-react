@@ -1,17 +1,20 @@
-import { Tarea } from "./Tarea";
+// ListaTareas.tsx
+import React from "react";
 
-type ListaTareas = {
-	listaTareas: string[]
-	borrarTarea: (index:number) => void
+interface Props {
+    listaTareas: string[];
+    borrarTarea: (index: number) => void; // Prop para la función de borrar
 }
 
-export const ListaTareas = ({listaTareas, borrarTarea}: ListaTareas) => {
-	return (
-		<div className="taskList">
-			{listaTareas.map((tarea, index) => (
-				<Tarea key={index} tarea={tarea} borrarTarea={() => borrarTarea(index)}></Tarea>
-			)
-			)}
-		</div>
-	)
-}
+export const ListaTareas: React.FC<Props> = ({ listaTareas, borrarTarea }) => {
+    return (
+        <ul>
+            {listaTareas.map((tarea, index) => (
+                <li key={index}>
+                    {tarea} {/* Muestra la tarea */}
+                    <button onClick={() => borrarTarea(index)}>Borrar</button> {/* Botón para borrar la tarea */}
+                </li>
+            ))}
+        </ul>
+    );
+};
